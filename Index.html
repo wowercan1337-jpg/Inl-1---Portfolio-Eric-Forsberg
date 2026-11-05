@@ -36,7 +36,7 @@
       <p class="eyebrow">PERSONAL PORTFOLIO</p>
       <h1>My Portfolio</h1>
       <p class="intro">
-        A collection of projects, ideas and work.
+        A collection of programming and CAD projects, ideas, and engineering work.
         Explore what I have been learning and creating.
       </p>
       <a class="primary-link" href="#table-content" data-page="table-content">
@@ -49,8 +49,8 @@
       <h2>Selected Projects</h2>
       <div class="toc-subtitle">PORTFOLIO / PROJECT INDEX</div>
 
+      <div class="toc-section-title">Programming & Software Projects (GitHub)</div>
       <div class="toc-list">
-        <!-- Project 1 -->
         <a href="#project-1" data-page="project-1">
           <span class="project-number">01</span>
           <span class="project-info">
@@ -60,7 +60,6 @@
           <span class="project-arrow">→</span>
         </a>
 
-        <!-- Project 2 -->
         <a href="#project-2" data-page="project-2">
           <span class="project-number">02</span>
           <span class="project-info">
@@ -70,7 +69,6 @@
           <span class="project-arrow">→</span>
         </a>
 
-        <!-- Project 3 -->
         <a href="#project-3" data-page="project-3">
           <span class="project-number">03</span>
           <span class="project-info">
@@ -80,123 +78,280 @@
           <span class="project-arrow">→</span>
         </a>
       </div>
-    </section>
 
-    <!-- PROJECT 1: FILM1 -->
-    <section id="project-1" class="panel">
-      <div class="report-label">PROJECT / 01</div>
-      <h2>Film1</h2>
-      
-      <div class="github-link-box">
-        <strong>GitHub Repository:</strong>
-        <a href="https://github.com/wowercan1337-jpg/Film1" target="_blank" rel="noopener noreferrer">
-          https://github.com/wowercan1337-jpg/Film1 ↗
+      <div class="toc-section-title" style="margin-top: 25px;">CAD Design & Modeling Projects</div>
+      <div class="toc-list">
+        <!-- CAD Project 1: SkopaNX -->
+        <a href="#cad-1" data-page="cad-1">
+          <span class="project-number">C1</span>
+          <span class="project-info">
+            <strong>SkopaNX (Excavator Bucket Design)</strong>
+            <small>Siemens NX / Parametric 3D Modeling</small>
+          </span>
+          <span class="project-arrow">→</span>
+        </a>
+
+        <!-- CAD Project 2: TraktorNX -->
+        <a href="#cad-2" data-page="cad-2">
+          <span class="project-number">C2</span>
+          <span class="project-info">
+            <strong>Compact Earthmoving Tractor</strong>
+            <small>Siemens NX / DFMA & FMEA Analysis</small>
+          </span>
+          <span class="project-arrow">→</span>
+        </a>
+
+        <!-- CAD Project 3: SolidWorks Vehicle & Gear Ratio -->
+        <a href="#cad-3" data-page="cad-3">
+          <span class="project-number">C3</span>
+          <span class="project-info">
+            <strong>Vehicle Assembly, Springs & Gear Ratios</strong>
+            <small>SolidWorks / Spring Mechanics & Gear Train</small>
+          </span>
+          <span class="project-arrow">→</span>
         </a>
       </div>
+    </section>
 
+    <!-- PROGRAMMING PROJECT 1 -->
+    <section id="project-1" class="panel">
+      <div class="report-label">PROGRAMMING PROJECT / 01</div>
+      <h2>Film1</h2>
+      <div class="github-link-box">
+        <strong>GitHub Repository:</strong>
+        <a href="https://github.com/wowercan1337-jpg/Film1" target="_blank" rel="noopener noreferrer">https://github.com/wowercan1337-jpg/Film1 ↗</a>
+      </div>
       <div class="report-content">
         <h3>Introduction</h3>
         <p>A robust backend movie database API tested thoroughly across multiple endpoints and ports (8081 and 8082).</p>
-        
-        <h4>API Testing & Endpoints Overview</h4>
-        <p><strong>Test 1 (GET):</strong> Fetched movie catalog from <code>http://localhost:8081/movies</code> containing default movie entries (e.g., Inception by Christopher Nolan).</p>
-        <p><strong>Test 2 (POST):</strong> Successfully added new entries (e.g., "oppenheimer") via <code>/movies</code>.</p>
-        <p><strong>Test 3 (DELETE):</strong> Verified deletion handling by removing specific movie IDs successfully.</p>
-        <p><strong>Test 4 (GET ID):</strong> Looked up individual items using endpoint parameters like <code>/movies/6</code>.</p>
-        <p><strong>Test 5 & 6 (Microservices/Combined):</strong> Tested relational data retrieval (Movies & Reviews) across port 8081 and port 8082 (combined services routing).</p>
-
-        <h3>Objectives</h3>
-        <p>To build, test, and validate RESTful API routing, data persistence, and cross-port communication.</p>
-
-        <h3>Implementation & Results</h3>
-        <p>All HTTP methods (GET, POST, DELETE) executed as expected with precise JSON formatting and structural response accuracy.</p>
       </div>
-
-      <!-- Navigation mellan projekt -->
       <div class="project-navigation">
         <span></span>
         <a href="#project-2" data-page="project-2" class="next-proj-btn">Next Project: BMS-Projekt 1 →</a>
       </div>
-
-      <a href="#table-content" data-page="table-content" class="back-link">
-        ← Back to Projects
-      </a>
+      <a href="#table-content" data-page="table-content" class="back-link">← Back to Projects Index</a>
     </section>
 
-    <!-- PROJECT 2: BMS-PROJEKT 1 -->
+    <!-- PROGRAMMING PROJECT 2 -->
     <section id="project-2" class="panel">
-      <div class="report-label">PROJECT / 02</div>
+      <div class="report-label">PROGRAMMING PROJECT / 02</div>
       <h2>BMS-Projekt 1</h2>
-
       <div class="github-link-box">
         <strong>GitHub Repository:</strong>
-        <a href="https://github.com/wowercan1337-jpg/bms-projekt1" target="_blank" rel="noopener noreferrer">
-          https://github.com/wowercan1337-jpg/bms-projekt1 ↗
-        </a>
+        <a href="https://github.com/wowercan1337-jpg/bms-projekt1" target="_blank" rel="noopener noreferrer">https://github.com/wowercan1337-jpg/bms-projekt1 ↗</a>
       </div>
-
       <div class="report-content">
         <h3>Introduction</h3>
-        <p>Battery Management Services (Part 1): A smart client designed to interact with a simulated EV charger via JSON HTTP to optimize household charging.</p>
-
-        <h4>Core Requirements & Simulation</h4>
-        <p>Reads hourly electricity prices (Price Area 3, Stockholm) alongside 24-hour household baseload profiles. Converts EV battery energy (kWh) to percentage and manages charging cycles from 20% to 80% (default capacity 60 kWh).</p>
-
-        <h3>Operational Modes</h3>
-        <p><strong>1. Lowest Household Consumption:</strong> Keeps total household + charger load $\le 11\text{ kW}$.</p>
-        <p><strong>2. Lowest Electricity Price:</strong> Schedules charging during cheap hours while respecting the $11\text{ kW}$ threshold.</p>
-
-        <h3>Simulator Endpoints & Workflow</h3>
-        <p>Utilizes endpoints such as <code>GET /info</code>, <code>GET /baseload</code>, <code>GET /priceperhour</code>, and <code>POST/GET /charge</code> to poll status, compute optimal hours, and output comprehensive timelines.</p>
+        <p>Battery Management Services (Part 1): Smart EV charger client interacting via JSON HTTP.</p>
       </div>
-
-      <!-- Navigation mellan projekt -->
       <div class="project-navigation">
         <a href="#project-1" data-page="project-1" class="prev-proj-btn">← Previous</a>
         <a href="#project-3" data-page="project-3" class="next-proj-btn">Next Project: Exjobbet →</a>
       </div>
-
-      <a href="#table-content" data-page="table-content" class="back-link">
-        ← Back to Projects
-      </a>
+      <a href="#table-content" data-page="table-content" class="back-link">← Back to Projects Index</a>
     </section>
 
-    <!-- PROJECT 3: EXJOBBET -->
+    <!-- PROGRAMMING PROJECT 3 -->
     <section id="project-3" class="panel">
-      <div class="report-label">PROJECT / 03</div>
+      <div class="report-label">PROGRAMMING PROJECT / 03</div>
       <h2>Exjobbet</h2>
-
       <div class="github-link-box">
         <strong>GitHub Repository:</strong>
-        <a href="https://github.com/wowercan1337-jpg/Exjobbet" target="_blank" rel="noopener noreferrer">
-          https://github.com/wowercan1337-jpg/Exjobbet ↗
-        </a>
+        <a href="https://github.com/wowercan1337-jpg/Exjobbet" target="_blank" rel="noopener noreferrer">https://github.com/wowercan1337-jpg/Exjobbet ↗</a>
+      </div>
+      <div class="report-content">
+        <h3>Introduction</h3>
+        <p>Full-stack programming and physical modeling featuring friction force ($F_f = \mu \cdot F_g \cdot \cos(\alpha)$).</p>
+      </div>
+      <div class="project-navigation">
+        <a href="#project-2" data-page="project-2" class="prev-proj-btn">← Previous</a>
+        <a href="#cad-1" data-page="cad-1" class="next-proj-btn">Next: SkopaNX →</a>
+      </div>
+      <a href="#table-content" data-page="table-content" class="back-link">← Back to Projects Index</a>
+    </section>
+
+    <!-- CAD PROJECT 1: SKOPANX -->
+    <section id="cad-1" class="panel">
+      <div class="report-label">CAD DESIGN / 01 (SIEMENS NX)</div>
+      <h2>SkopaNX (Excavator Bucket Design)</h2>
+
+      <div class="cad-image-container">
+        <img src="SkopaNx.png" alt="SkopaNX 3D Model" class="cad-preview-image">
+        <small class="image-caption">Figure 1.1: 3D CAD model of SkopaNX designed in Siemens NX[cite: 15].</small>
       </div>
 
       <div class="report-content">
         <h3>Introduction</h3>
-        <p>A comprehensive technical degree project combining full-stack development with advanced physical modeling and simulation.</p>
+        <p>A heavy-duty excavator bucket engineered in Siemens NX, optimized for structural integrity and wear resistance using Hardox wear steel.</p>
 
-        <h4>Architecture & Stack</h4>
-        <p><strong>Backend & Frontend:</strong> Full-stack programming setup supporting API server communication and database management.</p>
-        <p><strong>Reactive UI & Data Layer:</strong> Features reactive DOM-mapping, data-driven state models, and middleware validation layers for optimal logic handling.</p>
+        <h3>Technical Data</h3>
+        <table class="tech-data-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Material</th>
+              <th>Length (mm)</th>
+              <th>Width (mm)</th>
+              <th>Thickness (mm)</th>
+              <th>Height (mm)</th>
+              <th>Mass (kg)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Wear steel HB (550)</td>
+              <td>50</td>
+              <td>1800</td>
+              <td>10</td>
+              <td>10</td>
+              <td>14.73</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Structural Steel</td>
+              <td>700</td>
+              <td>850</td>
+              <td>1530</td>
+              <td>10</td>
+              <td>235.00</td>
+            </tr>
+          </tbody>
+        </table>
 
-        <h3>Randomized Physics Formulas</h3>
-        <p>The system incorporates dynamic physical calculations depending on environmental variables:</p>
-        <p><strong>Friction Force:</strong> $F_f = \mu \cdot F_g \cdot \cos(\alpha)$</p>
-        <p><strong>Slope/Incline Force:</strong> $F_{\text{luting}} = F_g \cdot \sin(\alpha)$</p>
-        <p><strong>Gravitational Force:</strong> $F_g = \text{Mass} \cdot g \cdot \cos(\alpha)$</p>
+        <h3>Design Specifications & Workflow</h3>
+        <p><strong>Software:</strong> Siemens NX</p>
+        <p><strong>Material Properties:</strong> HB 550 wear steel for high abrasive durability, combined with robust structural steel reinforcement plates and integrated lifting hooks.</p>
       </div>
 
-      <!-- Navigation mellan projekt -->
       <div class="project-navigation">
-        <a href="#project-2" data-page="project-2" class="prev-proj-btn">← Previous: BMS-Projekt 1</a>
+        <a href="#project-3" data-page="project-3" class="prev-proj-btn">← Previous</a>
+        <a href="#cad-2" data-page="cad-2" class="next-proj-btn">Next: TraktorNX →</a>
+      </div>
+
+      <a href="#table-content" data-page="table-content" class="back-link">← Back to Projects Index</a>
+    </section>
+
+    <!-- CAD PROJECT 2: TRAKTORNX -->
+    <section id="cad-2" class="panel">
+      <div class="report-label">CAD DESIGN / 02 (SIEMENS NX)</div>
+      <h2>Compact Earthmoving Tractor (TraktorNX)</h2>
+
+      <div class="download-box">
+        <a href="RapportExjobb.pdf" download class="download-btn">
+          📥 Download Full Technical Report (PDF)
+        </a>
+      </div>
+
+      <div class="cad-gallery-grid">
+        <div class="cad-image-container">
+          <img src="Traktor1NX.png" alt="TraktorNX Front View" class="cad-preview-image">
+          <small class="image-caption">Figure 2.1: Front assembly view of the compact tractor[cite: 16].</small>
+        </div>
+        <div class="cad-image-container">
+          <img src="Traktor2NX.png" alt="TraktorNX Bucket & Swing Tower View" class="cad-preview-image">
+          <small class="image-caption">Figure 2.2: Detailed view of bucket and swing tower[cite: 17].</small>
+        </div>
+      </div>
+
+      <div class="report-content">
+        <h3>3.1.2 Concept & Motivation</h3>
+        <p>
+          The motivation behind designing a new tractor within <strong>Heracles AB</strong> stems from the strategic need to expand the company's product line with an innovative earthmoving machine for agriculture and construction sites.
+        </p>
+        <p>
+          Market research identified a gap for compact earthmoving machines inspired by American bulldozers. A central part of the concept is the integration of a <strong>swing tower</strong> similar to excavators, providing flexibility and precision without compromising quality.
+        </p>
+
+        <h3>3.6 Design for Manufacture and Assembly (DFMA) & FMEA</h3>
+        <p>
+          Assembly and manufacturing strategies are derived from <strong>FMEA (Failure Mode and Effects Analysis)</strong>. Geometric changes in the CAD model are triggered based on FMEA impact regarding human errors, supported by DFA (Design for Assembly) and DFM (Design for Manufacturing).
+        </p>
+      </div>
+
+      <div class="project-navigation">
+        <a href="#cad-1" data-page="cad-1" class="prev-proj-btn">← Previous: SkopaNX</a>
+        <a href="#cad-3" data-page="cad-3" class="next-proj-btn">Next: SolidWorks Vehicle →</a>
+      </div>
+
+      <a href="#table-content" data-page="table-content" class="back-link">← Back to Projects Index</a>
+    </section>
+
+    <!-- CAD PROJECT 3: SOLIDWORKS VEHICLE, SPRINGS & GEARS -->
+    <section id="cad-3" class="panel">
+      <div class="report-label">CAD DESIGN / 03 (SOLIDWORKS)</div>
+      <h2>Vehicle Assembly, Spring Mechanics & Gear Ratios</h2>
+
+      <div class="download-box">
+        <a href="RapportExjobb.pdf" download class="download-btn">
+          📥 Download Full Technical Report (PDF)
+        </a>
+      </div>
+
+      <div class="cad-gallery-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="cad-image-container">
+          <img src="FordonSolid1.png" alt="Vehicle Assembly Overview" class="cad-preview-image">
+          <small class="image-caption">Figure 3.1: Vehicle assembly (FordonSolid1)[cite: 18].</small>
+        </div>
+        <div class="cad-image-container">
+          <img src="FordonSolid2.png" alt="Spring Component" class="cad-preview-image">
+          <small class="image-caption">Figure 3.2: Spring setup (FordonSolid2)[cite: 19].</small>
+        </div>
+        <div class="cad-image-container">
+          <img src="FordonSolid3.png" alt="Gear Train System" class="cad-preview-image">
+          <small class="image-caption">Figure 3.3: Gear train layout (FordonSolid3)[cite: 20].</small>
+        </div>
+      </div>
+
+      <div class="report-content">
+        <h3>1. Overview & Mass Specifications</h3>
+        <p>
+          Complete SolidWorks vehicle design featuring a total mass of <strong>8.74163215 kg</strong>[cite: 18], integrating precise structural components, spring suspension mechanics, and symmetrical gear transmission systems.
+        </p>
+
+        <h3>2. Spring Mechanics & Calculations</h3>
+        <p>
+          Spring material conforms to standard <strong>SS 1770</strong> with an ultimate tensile strength ($R_m$) of <strong>1250 MPa</strong>.
+        </p>
+
+        <h4>2.4.1 Spring Deflection Calculation ($\Delta x = x_1 - x_0$)</h4>
+        <p>$F_g = 265\text{ kg} \cdot 9.82\text{ m/s}^2 = 2602.3\text{ N}$</p>
+        <p>$k = 20000\text{ N/m}$</p>
+        <p>$(x_1 - x_0) = \frac{F_g}{k} = \frac{2602.3\text{ N}}{20000\text{ N/m}} = 0.130115\text{ m} = 13.0115\text{ cm} \approx 13\text{ cm}$</p>
+
+        <h4>2.4.2 Energy Storage Calculation</h4>
+        <p>$E = \frac{1}{2} \cdot k \cdot (x_1 - x_0)^2 = \frac{20000\text{ N/m} \cdot (0.130115\text{ m})^2}{2} = 169.2999132\text{ J} \approx 170\text{ J}$</p>
+
+        <h3>3. Gear Train System Analysis (Figure ABCD)</h3>
+        <p>
+          The power transmission system consists of four primary gears (A, B, C, and D) structured symmetrically on both the left and right sides (excluding the right-side braking mechanism).
+        </p>
+        <ul>
+          <li><strong>Gear A:</strong> 15 teeth[cite: 20]</li>
+          <li><strong>Gear B:</strong> 30 teeth[cite: 20]</li>
+          <li><strong>Gear C:</strong> 20 teeth[cite: 20]</li>
+          <li><strong>Gear D:</strong> 30 teeth[cite: 20]</li>
+        </ul>
+
+        <h4>Gear Ratio Breakdown (Left & Right Sides):</h4>
+        <p>$\frac{A}{B} = \frac{15}{30} = 0.5$</p>
+        <p>$\frac{B}{C} = \frac{30}{20} = 1.5$</p>
+        <p>$\frac{C}{D} = \frac{20}{30} = \frac{2}{3}$</p>
+        
+        <p><strong>Total Ratio ($R_{\text{total}}$):</strong></p>
+        <p>$R_{\text{total}} = \left(\frac{A}{B}\right) \cdot \left(\frac{B}{C}\right) \cdot \left(\frac{C}{D}\right) = 0.5 \cdot 1.5 \cdot \frac{2}{3} = 0.5$</p>
+        
+        <p>
+          <strong>Conclusion:</strong> Both sides yield an identical total transmission ratio of <strong>0.5</strong>, ensuring perfectly balanced mechanical performance.
+        </p>
+      </div>
+
+      <div class="project-navigation">
+        <a href="#cad-2" data-page="cad-2" class="prev-proj-btn">← Previous: TraktorNX</a>
         <span></span>
       </div>
 
-      <a href="#table-content" data-page="table-content" class="back-link">
-        ← Back to Projects
-      </a>
+      <a href="#table-content" data-page="table-content" class="back-link">← Back to Projects Index</a>
     </section>
 
     <!-- ABOUT ME -->
@@ -204,14 +359,12 @@
       <h2>About Me</h2>
       <p>Hello! My name is [Your name].</p>
       <p>
-        I am interested in programming, technology and development.
-        This portfolio presents my education, experience and projects.
+        I am an engineer and developer passionate about software programming, CAD design, technology, and modern product development.
       </p>
-
       <div class="about-developer-card">
-        <h3>Developer Profile</h3>
-        <p><strong>Status:</strong> Available for projects</p>
-        <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Git</p>
+        <h3>Developer & Engineer Profile</h3>
+        <p><strong>Status:</strong> Available for projects & engineering roles</p>
+        <p><strong>Tech & CAD Stack:</strong> HTML, CSS, JavaScript, Git, Siemens NX, SolidWorks, Python</p>
         <div class="about-links">
           <a href="https://github.com/wowercan1337-jpg" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a>
         </div>
@@ -221,15 +374,12 @@
     <!-- CONTACT -->
     <section id="contact" class="panel">
       <h2>Contact</h2>
-      <p>
-        Email:
-        <a href="mailto:your@email.com">your@email.com</a>
-      </p>
+      <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
     </section>
 
   </main>
 
-  <!-- SIDFOT (FOOTER) -->
+  <!-- FOOTER -->
   <footer>
     &copy; 2026 My Portfolio. All rights reserved.
   </footer>
@@ -246,33 +396,21 @@
 
       selectedPage.classList.add("active-page");
 
-      const mainPages = [
-        "home",
-        "table-content",
-        "about-me",
-        "contact"
-      ];
+      const mainPages = ["home", "table-content", "about-me", "contact"];
 
       document.querySelectorAll(".menu a[data-page]").forEach(link => {
         link.classList.remove("active");
         if (
           link.dataset.page === pageId ||
-          (
-            !mainPages.includes(pageId) &&
-            link.dataset.page === "table-content"
-          )
+          (!mainPages.includes(pageId) && link.dataset.page === "table-content")
         ) {
           link.classList.add("active");
         }
       });
 
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
-    // NAVIGATION LINK CLICK
     document.querySelectorAll("[data-page]").forEach(link => {
       link.addEventListener("click", event => {
         event.preventDefault();
@@ -280,13 +418,11 @@
         history.pushState(null, "", "#" + pageId);
         showPage(pageId);
 
-        // Stäng hamburgarmenyn vid klick i mobilläge
         document.getElementById("nav-menu").classList.remove("open");
         document.getElementById("hamburger-btn").classList.remove("active");
       });
     });
 
-    // HAMBURGER TOGGLE (FOR MOBILE)
     const hamburgerBtn = document.getElementById("hamburger-btn");
     const navMenu = document.getElementById("nav-menu");
 
@@ -295,18 +431,19 @@
       navMenu.classList.toggle("open");
     });
 
-    // BROWSER BACK AND FORWARD
     window.addEventListener("popstate", () => {
       const pageId = location.hash.substring(1) || "home";
       showPage(pageId);
     });
 
-    // INITIAL PAGE
     showPage(location.hash.substring(1) || "home");
   </script>
 
 </body>
 </html>
+
+
+
 
 
 
