@@ -29,10 +29,9 @@
     </nav>
   </header>
 
-
   <main>
 
-    <!-- HOME -->
+    <!-- HOME (Panel 1) -->
     <section id="home" class="panel home-panel active-page">
       <p class="eyebrow">PERSONAL PORTFOLIO</p>
       <h1>My Portfolio</h1>
@@ -45,114 +44,160 @@
       </a>
     </section>
 
-
-    <!-- TABLE OF CONTENTS -->
+    <!-- TABLE OF CONTENTS (Panel 2) -->
     <section id="table-content" class="panel">
       <h2>Selected Projects</h2>
       <div class="toc-subtitle">PORTFOLIO / PROJECT INDEX</div>
 
       <div class="toc-list">
+        <!-- Project 1 -->
         <a href="#project-1" data-page="project-1">
           <span class="project-number">01</span>
           <span class="project-info">
-            <strong>Project 1</strong>
-            <small>First project overview</small>
+            <strong>Film1 (Movie API & Testing)</strong>
+            <small>GitHub: wowercan1337-jpg/Film1</small>
           </span>
           <span class="project-arrow">→</span>
         </a>
 
+        <!-- Project 2 -->
         <a href="#project-2" data-page="project-2">
           <span class="project-number">02</span>
           <span class="project-info">
-            <strong>Project 2</strong>
-            <small>Second project overview</small>
+            <strong>BMS-Projekt 1 (Battery Management)</strong>
+            <small>GitHub: wowercan1337-jpg/bms-projekt1</small>
           </span>
           <span class="project-arrow">→</span>
         </a>
 
+        <!-- Project 3 -->
         <a href="#project-3" data-page="project-3">
           <span class="project-number">03</span>
           <span class="project-info">
-            <strong>Project 3</strong>
-            <small>Third project overview</small>
+            <strong>Exjobbet (Physics & Architecture)</strong>
+            <small>GitHub: wowercan1337-jpg/Exjobbet</small>
           </span>
           <span class="project-arrow">→</span>
         </a>
       </div>
     </section>
 
-
-    <!-- PROJECT 1 -->
+    <!-- PROJECT 1: FILM1 -->
     <section id="project-1" class="panel">
       <div class="report-label">PROJECT / 01</div>
-      <h2>Project 1</h2>
+      <h2>Film1</h2>
+      
+      <div class="github-link-box">
+        <strong>GitHub Repository:</strong>
+        <a href="https://github.com/wowercan1337-jpg/Film1" target="_blank" rel="noopener noreferrer">
+          https://github.com/wowercan1337-jpg/Film1 ↗
+        </a>
+      </div>
+
       <div class="report-content">
         <h3>Introduction</h3>
-        <p>Introduce your first project here.</p>
-        <h3>Background</h3>
-        <p>Describe the background and purpose of the project.</p>
+        <p>A robust backend movie database API tested thoroughly across multiple endpoints and ports (8081 and 8082).</p>
+        
+        <h4>API Testing & Endpoints Overview</h4>
+        <p><strong>Test 1 (GET):</strong> Fetched movie catalog from <code>http://localhost:8081/movies</code> containing default movie entries (e.g., Inception by Christopher Nolan).</p>
+        <p><strong>Test 2 (POST):</strong> Successfully added new entries (e.g., "oppenheimer") via <code>/movies</code>.</p>
+        <p><strong>Test 3 (DELETE):</strong> Verified deletion handling by removing specific movie IDs successfully.</p>
+        <p><strong>Test 4 (GET ID):</strong> Looked up individual items using endpoint parameters like <code>/movies/6</code>.</p>
+        <p><strong>Test 5 & 6 (Microservices/Combined):</strong> Tested relational data retrieval (Movies & Reviews) across port 8081 and port 8082 (combined services routing).</p>
+
         <h3>Objectives</h3>
-        <p>Describe the objectives of the project.</p>
-        <h3>Implementation</h3>
-        <p>Describe the technologies and development process.</p>
-        <h3>Results</h3>
-        <p>Present the results of your work.</p>
-        <h3>Conclusion</h3>
-        <p>Summarize your project.</p>
+        <p>To build, test, and validate RESTful API routing, data persistence, and cross-port communication.</p>
+
+        <h3>Implementation & Results</h3>
+        <p>All HTTP methods (GET, POST, DELETE) executed as expected with precise JSON formatting and structural response accuracy.</p>
       </div>
+
+      <!-- Navigation mellan projekt -->
+      <div class="project-navigation">
+        <span></span>
+        <a href="#project-2" data-page="project-2" class="next-proj-btn">Next Project: BMS-Projekt 1 →</a>
+      </div>
+
       <a href="#table-content" data-page="table-content" class="back-link">
         ← Back to Projects
       </a>
     </section>
 
-
-    <!-- PROJECT 2 -->
+    <!-- PROJECT 2: BMS-PROJEKT 1 -->
     <section id="project-2" class="panel">
       <div class="report-label">PROJECT / 02</div>
-      <h2>Project 2</h2>
+      <h2>BMS-Projekt 1</h2>
+
+      <div class="github-link-box">
+        <strong>GitHub Repository:</strong>
+        <a href="https://github.com/wowercan1337-jpg/bms-projekt1" target="_blank" rel="noopener noreferrer">
+          https://github.com/wowercan1337-jpg/bms-projekt1 ↗
+        </a>
+      </div>
+
       <div class="report-content">
         <h3>Introduction</h3>
-        <p>Introduce your second project here.</p>
-        <h3>Background</h3>
-        <p>Describe the background and purpose of the project.</p>
-        <h3>Objectives</h3>
-        <p>Describe the objectives of the project.</p>
-        <h3>Implementation</h3>
-        <p>Describe the technologies and development process.</p>
-        <h3>Results</h3>
-        <p>Present the results of your work.</p>
-        <h3>Conclusion</h3>
-        <p>Summarize your project.</p>
+        <p>Battery Management Services (Part 1): A smart client designed to interact with a simulated EV charger via JSON HTTP to optimize household charging.</p>
+
+        <h4>Core Requirements & Simulation</h4>
+        <p>Reads hourly electricity prices (Price Area 3, Stockholm) alongside 24-hour household baseload profiles. Converts EV battery energy (kWh) to percentage and manages charging cycles from 20% to 80% (default capacity 60 kWh).</p>
+
+        <h3>Operational Modes</h3>
+        <p><strong>1. Lowest Household Consumption:</strong> Keeps total household + charger load $\le 11\text{ kW}$.</p>
+        <p><strong>2. Lowest Electricity Price:</strong> Schedules charging during cheap hours while respecting the $11\text{ kW}$ threshold.</p>
+
+        <h3>Simulator Endpoints & Workflow</h3>
+        <p>Utilizes endpoints such as <code>GET /info</code>, <code>GET /baseload</code>, <code>GET /priceperhour</code>, and <code>POST/GET /charge</code> to poll status, compute optimal hours, and output comprehensive timelines.</p>
       </div>
+
+      <!-- Navigation mellan projekt -->
+      <div class="project-navigation">
+        <a href="#project-1" data-page="project-1" class="prev-proj-btn">← Previous</a>
+        <a href="#project-3" data-page="project-3" class="next-proj-btn">Next Project: Exjobbet →</a>
+      </div>
+
       <a href="#table-content" data-page="table-content" class="back-link">
         ← Back to Projects
       </a>
     </section>
 
-
-    <!-- PROJECT 3 -->
+    <!-- PROJECT 3: EXJOBBET -->
     <section id="project-3" class="panel">
       <div class="report-label">PROJECT / 03</div>
-      <h2>Project 3</h2>
+      <h2>Exjobbet</h2>
+
+      <div class="github-link-box">
+        <strong>GitHub Repository:</strong>
+        <a href="https://github.com/wowercan1337-jpg/Exjobbet" target="_blank" rel="noopener noreferrer">
+          https://github.com/wowercan1337-jpg/Exjobbet ↗
+        </a>
+      </div>
+
       <div class="report-content">
         <h3>Introduction</h3>
-        <p>Introduce your third project here.</p>
-        <h3>Background</h3>
-        <p>Describe the background and purpose of the project.</p>
-        <h3>Objectives</h3>
-        <p>Describe the objectives of the project.</p>
-        <h3>Implementation</h3>
-        <p>Describe the technologies and development process.</p>
-        <h3>Results</h3>
-        <p>Present the results of your work.</p>
-        <h3>Conclusion</h3>
-        <p>Summarize your project.</p>
+        <p>A comprehensive technical degree project combining full-stack development with advanced physical modeling and simulation.</p>
+
+        <h4>Architecture & Stack</h4>
+        <p><strong>Backend & Frontend:</strong> Full-stack programming setup supporting API server communication and database management.</p>
+        <p><strong>Reactive UI & Data Layer:</strong> Features reactive DOM-mapping, data-driven state models, and middleware validation layers for optimal logic handling.</p>
+
+        <h3>Randomized Physics Formulas</h3>
+        <p>The system incorporates dynamic physical calculations depending on environmental variables:</p>
+        <p><strong>Friction Force:</strong> $F_f = \mu \cdot F_g \cdot \cos(\alpha)$</p>
+        <p><strong>Slope/Incline Force:</strong> $F_{\text{luting}} = F_g \cdot \sin(\alpha)$</p>
+        <p><strong>Gravitational Force:</strong> $F_g = \text{Mass} \cdot g \cdot \cos(\alpha)$</p>
       </div>
+
+      <!-- Navigation mellan projekt -->
+      <div class="project-navigation">
+        <a href="#project-2" data-page="project-2" class="prev-proj-btn">← Previous: BMS-Projekt 1</a>
+        <span></span>
+      </div>
+
       <a href="#table-content" data-page="table-content" class="back-link">
         ← Back to Projects
       </a>
     </section>
-
 
     <!-- ABOUT ME -->
     <section id="about-me" class="panel">
@@ -162,8 +207,16 @@
         I am interested in programming, technology and development.
         This portfolio presents my education, experience and projects.
       </p>
-    </section>
 
+      <div class="about-developer-card">
+        <h3>Developer Profile</h3>
+        <p><strong>Status:</strong> Available for projects</p>
+        <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Git</p>
+        <div class="about-links">
+          <a href="https://github.com/wowercan1337-jpg" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a>
+        </div>
+      </div>
+    </section>
 
     <!-- CONTACT -->
     <section id="contact" class="panel">
@@ -176,6 +229,10 @@
 
   </main>
 
+  <!-- SIDFOT (FOOTER) -->
+  <footer>
+    &copy; 2026 My Portfolio. All rights reserved.
+  </footer>
 
   <!-- JAVASCRIPT -->
   <script>
@@ -250,6 +307,12 @@
 
 </body>
 </html>
+
+
+
+
+
+
 
 
 

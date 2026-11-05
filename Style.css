@@ -19,11 +19,15 @@ html {
 body {
   min-height: 100vh;
   margin: 0;
-  padding: 112px 22px 48px;
+  padding: 20px;
   color: var(--text);
   font-family: Inter, Arial, sans-serif;
   background-color: #020b18;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centrerar allt perfekt vertikalt på skärmen */
 }
 
 /* RESPONSIV BAKGRUNDSBILD - DESKTOP */
@@ -36,7 +40,6 @@ body::after {
   pointer-events: none;
 }
 
-/* Mörkt överlägg (tillräckligt genomskinligt för att bakgrunden ska lysa igenom) */
 body::before {
   content: "";
   position: fixed;
@@ -58,7 +61,7 @@ body::before {
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
-  width: min(100% - 44px, 700px); /* Matchar boxens bredd */
+  width: min(100% - 44px, 700px);
   display: flex;
   justify-content: center;
 }
@@ -164,7 +167,10 @@ body::before {
 main {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
+  flex: 1;
+  margin: 70px 0 20px 0;
 }
 
 /* ALL PANELS */
@@ -212,7 +218,8 @@ main {
   letter-spacing: 3px;
 }
 
-.home-panel h1 {
+/* RUBRIK NIVÅ 1 (h1) */
+h1 {
   margin: 0;
   color: #fff;
   font-size: clamp(43px, 8vw, 65px);
@@ -253,8 +260,7 @@ main {
   font-size: 17px;
 }
 
-/* CONTENT PAGES */
-
+/* RUBRIKER (NIVÅ 2, 3, 4) */
 h2 {
   margin: 0 0 9px;
   color: #fff;
@@ -268,10 +274,102 @@ h3 {
   font-size: 16px;
 }
 
+h4 {
+  margin: 14px 0 4px;
+  color: var(--purple-bright);
+  font-size: 14px;
+  font-weight: 600;
+}
+
 p, li {
   color: #d0c9dc;
   font-size: 14px;
   line-height: 1.7;
+}
+
+/* ABOUT DEVELOPER CARD */
+.about-developer-card {
+  margin-top: 20px;
+  padding: 16px;
+  background: rgba(0, 240, 255, 0.05);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  border-radius: 12px;
+}
+
+.about-developer-card h3 {
+  margin-top: 0;
+  font-size: 14px;
+  color: var(--cyan);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about-developer-card p {
+  margin: 6px 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.about-developer-card strong {
+  color: var(--text);
+}
+
+.about-links {
+  margin-top: 10px;
+}
+
+.about-links a {
+  display: inline-block;
+  font-size: 13px;
+  color: var(--cyan);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-links a:hover {
+  text-decoration: underline;
+}
+
+/* GITHUB REPO LINK BOX IN PROJECTS */
+.github-link-box {
+  margin: 12px 0 16px;
+  padding: 10px 14px;
+  background: rgba(0, 240, 255, 0.06);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.github-link-box a {
+  color: var(--cyan);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.github-link-box a:hover {
+  text-decoration: underline;
+}
+
+/* PROJECT NAVIGATION (PREV / NEXT) */
+.project-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(0, 240, 255, 0.15);
+}
+
+.project-navigation a {
+  color: var(--cyan);
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.project-navigation a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
 }
 
 /* TABLE OF CONTENTS */
@@ -339,18 +437,9 @@ p, li {
   margin-top: 4px;
 }
 
-.report-content h3 {
-  margin-top: 17px;
-}
-
-.report-content p {
-  margin-top: 4px;
-}
-
 .back-link {
   display: inline-block;
-  margin-top: auto;
-  padding-top: 20px;
+  margin-top: 15px;
   color: var(--cyan);
   font-size: 13px;
   text-decoration: none;
@@ -360,21 +449,33 @@ p, li {
   color: white;
 }
 
-.panel a:not(.back-link):not(.primary-link) {
+.panel a:not(.back-link):not(.primary-link):not(.github-link-box a):not(.project-navigation a):not(.about-links a) {
   color: var(--cyan);
 }
 
-/* MOBILLÄGE (Gör bakgrundsbilden responsiv & anpassad för stående skärm) */
+/* SIDFOT (FOOTER) - Ren, utan box och längst ner */
+footer {
+  width: 100%;
+  max-width: 700px;
+  padding: 12px 0 5px 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+  border-top: 1px solid rgba(0, 240, 255, 0.15);
+  background: transparent;
+  flex-shrink: 0;
+}
+
+/* RESPONSIV MOBILLÄGE */
 
 @media (max-width: 650px) {
 
   body {
-    padding: 80px 14px 25px;
+    padding: 14px;
   }
 
-  /* Justerar bakgrundsbilden så neongrafiken komprimeras och syns på mobil */
   body::after {
-    background-size: 100% 100%; /* Sträcker ut hela bilden över hela mobilskärmen */
+    background-size: 100% 100%;
     background-position: center center;
   }
 
@@ -427,9 +528,11 @@ p, li {
   h2 {
     font-size: 24px;
   }
+
+  footer {
+    width: 100%;
+  }
 }
-
-
 
 
 
