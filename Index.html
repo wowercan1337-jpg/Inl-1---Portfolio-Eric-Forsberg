@@ -1,80 +1,137 @@
-
+ 
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090713">
+
 <title>My Portfolio</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<!-- MAIN MENU -->
+<!-- NAVIGATION MENU -->
 
-<nav class="menu">
-  <a href="#home" data-page="home" class="active">Home</a>
-  <a href="#table-content" data-page="table-content">Table Content</a>
-  <a href="#about-me" data-page="about-me">About Me</a>
-  <a href="#contact" data-page="contact">Contact</a>
+<nav class="menu" aria-label="Main navigation">
+
+  <a href="#home" data-page="home" class="active">
+    Home
+  </a>
+
+  <a href="#table-content" data-page="table-content">
+    Table Content
+  </a>
+
+  <a href="#about-me" data-page="about-me">
+    About Me
+  </a>
+
+  <a href="#contact" data-page="contact">
+    Contact
+  </a>
+
 </nav>
+
 
 <main>
 
   <!-- HOME -->
 
   <section id="home" class="panel home-panel active-page">
-    <h1>Portfolio</h1>
-    <p>Welcome to my portfolio</p>
+
+    <p class="eyebrow">PERSONAL PORTFOLIO</p>
+
+    <h1>My Portfolio</h1>
+
+    <p class="intro">
+      A collection of projects, ideas and work.
+      Explore what I have been learning and creating.
+    </p>
+
+    <a class="primary-link"
+       href="#table-content"
+       data-page="table-content">
+
+      Explore projects <span>→</span>
+
+    </a>
+
   </section>
+
 
   <!-- TABLE OF CONTENTS -->
 
   <section id="table-content" class="panel">
 
-    <h2>Table of Contents</h2>
-    <div class="toc-subtitle">PORTFOLIO / PROJECT INDEX</div>
+    <h2>Selected Projects</h2>
+
+    <div class="toc-subtitle">
+      PORTFOLIO / PROJECT INDEX
+    </div>
 
     <div class="toc-list">
 
       <a href="#project-1" data-page="project-1">
+
         <span class="project-number">01</span>
+
         <span class="project-info">
           <strong>Project 1</strong>
           <small>First project overview</small>
         </span>
+
         <span class="project-arrow">→</span>
+
       </a>
 
+
       <a href="#project-2" data-page="project-2">
+
         <span class="project-number">02</span>
+
         <span class="project-info">
           <strong>Project 2</strong>
           <small>Second project overview</small>
         </span>
+
         <span class="project-arrow">→</span>
+
       </a>
 
+
       <a href="#project-3" data-page="project-3">
+
         <span class="project-number">03</span>
+
         <span class="project-info">
           <strong>Project 3</strong>
           <small>Third project overview</small>
         </span>
+
         <span class="project-arrow">→</span>
+
       </a>
 
     </div>
+
   </section>
+
 
   <!-- PROJECT 1 -->
 
   <section id="project-1" class="panel">
 
     <div class="report-label">PROJECT / 01</div>
+
     <h2>Project 1</h2>
 
     <div class="report-content">
+
       <h3>Introduction</h3>
       <p>Introduce your first project here.</p>
 
@@ -92,22 +149,30 @@
 
       <h3>Conclusion</h3>
       <p>Summarize your project.</p>
+
     </div>
 
-    <a href="#table-content" data-page="table-content" class="back-link">
-      ← Back to Table of Contents
+    <a href="#table-content"
+       data-page="table-content"
+       class="back-link">
+
+      ← Back to Projects
+
     </a>
 
   </section>
+
 
   <!-- PROJECT 2 -->
 
   <section id="project-2" class="panel">
 
     <div class="report-label">PROJECT / 02</div>
+
     <h2>Project 2</h2>
 
     <div class="report-content">
+
       <h3>Introduction</h3>
       <p>Introduce your second project here.</p>
 
@@ -125,22 +190,30 @@
 
       <h3>Conclusion</h3>
       <p>Summarize your project.</p>
+
     </div>
 
-    <a href="#table-content" data-page="table-content" class="back-link">
-      ← Back to Table of Contents
+    <a href="#table-content"
+       data-page="table-content"
+       class="back-link">
+
+      ← Back to Projects
+
     </a>
 
   </section>
+
 
   <!-- PROJECT 3 -->
 
   <section id="project-3" class="panel">
 
     <div class="report-label">PROJECT / 03</div>
+
     <h2>Project 3</h2>
 
     <div class="report-content">
+
       <h3>Introduction</h3>
       <p>Introduce your third project here.</p>
 
@@ -158,13 +231,19 @@
 
       <h3>Conclusion</h3>
       <p>Summarize your project.</p>
+
     </div>
 
-    <a href="#table-content" data-page="table-content" class="back-link">
-      ← Back to Table of Contents
+    <a href="#table-content"
+       data-page="table-content"
+       class="back-link">
+
+      ← Back to Projects
+
     </a>
 
   </section>
+
 
   <!-- ABOUT ME -->
 
@@ -181,6 +260,7 @@
 
   </section>
 
+
   <!-- CONTACT -->
 
   <section id="contact" class="panel">
@@ -195,6 +275,7 @@
   </section>
 
 </main>
+
 
 <!-- JAVASCRIPT -->
 
@@ -212,6 +293,7 @@ function showPage(pageId) {
 
   selectedPage.classList.add("active-page");
 
+
   const mainPages = [
     "home",
     "table-content",
@@ -219,36 +301,40 @@ function showPage(pageId) {
     "contact"
   ];
 
-  document.querySelectorAll(".menu a").forEach(link => {
+
+  document.querySelectorAll(".menu a[data-page]").forEach(link => {
 
     link.classList.remove("active");
 
-    if (link.dataset.page === pageId) {
-      link.classList.add("active");
-    }
-
     if (
-      !mainPages.includes(pageId) &&
-      link.dataset.page === "table-content"
+      link.dataset.page === pageId ||
+      (
+        !mainPages.includes(pageId) &&
+        link.dataset.page === "table-content"
+      )
     ) {
       link.classList.add("active");
     }
 
   });
 
-  window.scrollTo(0, 0);
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+
 }
 
 
-// Navigation
+// NAVIGATION
 
 document.querySelectorAll("[data-page]").forEach(link => {
 
-  link.addEventListener("click", function(event) {
+  link.addEventListener("click", event => {
 
     event.preventDefault();
 
-    const pageId = this.dataset.page;
+    const pageId = link.dataset.page;
 
     history.pushState(null, "", "#" + pageId);
 
@@ -259,7 +345,7 @@ document.querySelectorAll("[data-page]").forEach(link => {
 });
 
 
-// Browser back and forward
+// BROWSER BACK AND FORWARD
 
 window.addEventListener("popstate", () => {
 
@@ -270,16 +356,16 @@ window.addEventListener("popstate", () => {
 });
 
 
-// Initial page
+// INITIAL PAGE
 
-const initialPage = location.hash.substring(1) || "home";
-
-showPage(initialPage);
+showPage(location.hash.substring(1) || "home");
 
 </script>
 
 </body>
 </html>
+
+
 
 
 
