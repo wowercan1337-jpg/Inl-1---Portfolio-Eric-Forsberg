@@ -30,7 +30,7 @@ body {
   justify-content: center;
 }
 
-/* --- BAKGRUNDSBILD (Identisk och centrerad på alla enheter: Desktop, Tablet, Mobil) --- */
+/* --- BAKGRUNDSBILD --- */
 body::after {
   content: "";
   position: fixed;
@@ -39,7 +39,7 @@ body::after {
   background-image: url("Bakgrundbild.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100% 100%; /* Säkerställer att hela bilden skalas in snyggt utan att kapas i desktop */
+  background-size: 100% 100%;
   background-color: #020b18;
   pointer-events: none;
 }
@@ -57,7 +57,7 @@ body::before {
   );
 }
 
-/* --- NAVIGATION (Desktop & Tablet) --- */
+/* --- NAVIGATION --- */
 .nav-container {
   position: fixed;
   top: 20px;
@@ -261,7 +261,7 @@ p, li { color: #d0c9dc; font-size: 14px; line-height: 1.6; }
   border-radius: 6px;
 }
 
-image-caption {
+.image-caption {
   display: block;
   margin-top: 6px;
   font-size: 11px;
@@ -345,6 +345,115 @@ image-caption {
   text-decoration: none;
 }
 
+/* --- CONTACT FORM & DETAILS STYLING --- */
+.contact-details-box {
+  background: rgba(0, 240, 255, 0.04);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.contact-details-box p {
+  margin: 6px 0;
+}
+
+.contact-details-box a {
+  color: var(--cyan);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-details-box a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-size: 12px;
+  color: var(--cyan);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="url"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  background: rgba(8, 8, 22, 0.8);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 13px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--cyan);
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+}
+
+.form-group option {
+  background: #090713;
+  color: #fff;
+}
+
+.checkbox-group {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--cyan);
+  cursor: pointer;
+}
+
+.checkbox-group label {
+  cursor: pointer;
+  font-weight: normal;
+  color: #d0c9dc;
+}
+
+.submit-btn {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #7b2cbf 0%, #0077b6 100%);
+  border: 1px solid var(--cyan);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #9153ff 0%, #0096c7 100%);
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+}
+
 footer {
   width: 100%;
   max-width: 700px;
@@ -357,7 +466,7 @@ footer {
   flex-shrink: 0;
 }
 
-/* --- MOBILVYN (Max 650px - Endast hamburgermenyn flyttad till höger) --- */
+/* --- MOBILVYN (Max 650px - Endast hamburgermenyn till höger) --- */
 @media (max-width: 650px) {
   body { padding: 14px; }
   
@@ -397,5 +506,6 @@ footer {
   .panel { height: 520px; padding: 22px; }
   footer { width: 100%; }
 }
+
 
 
