@@ -30,12 +30,17 @@ body {
   justify-content: center;
 }
 
+/* --- BAKGRUNDSBILD (Identisk och centrerad på alla enheter: Desktop, Tablet, Mobil) --- */
 body::after {
   content: "";
   position: fixed;
   inset: 0;
   z-index: -2;
-  background: url("Bakgrundbild.png") center center / cover no-repeat;
+  background-image: url("Bakgrundbild.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%; /* Säkerställer att hela bilden skalas in snyggt utan att kapas i desktop */
+  background-color: #020b18;
   pointer-events: none;
 }
 
@@ -52,6 +57,7 @@ body::before {
   );
 }
 
+/* --- NAVIGATION (Desktop & Tablet) --- */
 .nav-container {
   position: fixed;
   top: 20px;
@@ -83,26 +89,27 @@ body::before {
   justify-content: center;
   min-height: 40px;
   padding: 0 14px;
-  color: #e9e3f4;
+  color: #ffffff;
   border: 1px solid transparent;
   border-radius: 8px;
   font-size: 13px;
-  font-weight: 550;
+  font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
   transition: background .22s ease, color .22s ease;
 }
 
 .menu a:hover {
-  color: #fff;
-  background: rgba(0, 240, 255, .12);
+  color: #ffffff;
+  background: rgba(0, 240, 255, .2);
 }
 
 .menu a.active {
-  color: #fff;
-  border-color: rgba(0, 240, 255, .5);
-  background: linear-gradient(135deg, rgba(145,83,255,.95), rgba(0,180,216,.9));
-  box-shadow: 0 0 18px rgba(0, 240, 255, .3);
+  color: #ffffff;
+  border-color: rgba(0, 240, 255, 0.7);
+  background: linear-gradient(135deg, #7b2cbf 0%, #0077b6 100%);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 18px rgba(0, 240, 255, .4);
 }
 
 .hamburger {
@@ -254,7 +261,7 @@ p, li { color: #d0c9dc; font-size: 14px; line-height: 1.6; }
   border-radius: 6px;
 }
 
-.image-caption {
+image-caption {
   display: block;
   margin-top: 6px;
   font-size: 11px;
@@ -350,34 +357,45 @@ footer {
   flex-shrink: 0;
 }
 
+/* --- MOBILVYN (Max 650px - Endast hamburgermenyn flyttad till höger) --- */
 @media (max-width: 650px) {
   body { padding: 14px; }
+  
+  .nav-container {
+    justify-content: flex-end;
+    width: calc(100% - 28px);
+  }
+
   .cad-gallery-grid { grid-template-columns: 1fr !important; }
   .hamburger { display: flex; }
+  
   .menu {
     position: absolute;
-    top: 55px; left: 0; right: 0; width: 100%;
-    flex-direction: column; gap: 8px; padding: 14px;
-    opacity: 0; pointer-events: none;
+    top: 55px; 
+    left: 0; 
+    right: 0; 
+    width: 100%;
+    flex-direction: column; 
+    gap: 8px; 
+    padding: 14px;
+    opacity: 0; 
+    pointer-events: none;
     transform: translateY(-12px);
     transition: all 0.25s ease-in-out;
     border-radius: 16px;
     border: 1px solid rgba(0, 240, 255, .4);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
   }
-  .menu.open { opacity: 1; pointer-events: auto; transform: translateY(0); }
+  
+  .menu.open { 
+    opacity: 1; 
+    pointer-events: auto; 
+    transform: translateY(0); 
+  }
+  
   .menu a { width: 100%; min-height: 40px; justify-content: center; font-size: 13px; }
   .panel { height: 520px; padding: 22px; }
   footer { width: 100%; }
 }
-
-
-
-
-
-
-
-
-
 
 
