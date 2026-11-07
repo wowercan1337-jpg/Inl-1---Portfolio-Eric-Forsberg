@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090713">
+
+  <title>My Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION MENU -->
+  <header class="nav-container">
+    <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="menu" id="nav-menu" aria-label="Main navigation">
+      <a href="#home" data-page="home" class="active">Home</a>
+      <a href="#table-content" data-page="table-content">Table Content</a>
+      <a href="#about-me" data-page="about-me">About Me</a>
+      <a href="#contact" data-page="contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HOME (Panel 1) -->
+    <section id="home" class="panel home-panel active-page">
+      <p class="eyebrow">PERSONAL PORTFOLIO</p>
+      <h1>My Portfolio</h1>
+      <p class="intro">
+        A collection of programming and CAD projects, ideas, and engineering work.
+        Explore what I have been learning and creating.
+      </p>
+      <a class="primary-link" href="#table-content" data-page="table-content">
+        Explore projects <span>→</span>
+      </a>
+    </section>
+
+    <!-- TABLE OF CONTENTS (Panel 2) -->
+    <section id="table-content" class="panel">
+      <h2>Selected Projects</h2>
+      <div class="toc-subtitle">PORTFOLIO / PROJECT INDEX</div>
+
+      <div class="toc-section-title">Programming & Software Projects (GitHub)</div>
+      <div class="toc-list">
+        <a href="#project-1" data-page="project-1">
+          <span class="project-number">01</span>
+          <span class="project-info">
+            <strong>Film1 (Movie API & Testing)</strong>
+            <small>GitHub: wowercan1337-jpg/Film1</small>
+          </span>
+          <span class="project-arrow">→</span>
+        </a>
+
+        <a href="#project-2" data-page="project-2">
+          <span class="project-number">02</span>
+          <span class="project-info">
+            <strong>BMS-Projekt 1 (Battery Management)</strong>
+            <small>GitHub: wowercan1337-jpg/bms-projekt1</small>
+          </span>
+          <span class="project-arrow">→</span>
+        </a>
+
+        <a href="#project-3" data-page="project-3">
+          <span class="project-number">03</span>
+          <span class="project-info">
+            <strong>Exjobbet (Physics & Architecture)</strong>
+            <small>GitHub: wowercan1337-jpg/Exjobbet</small>
+          </span>
+          <span class="project-arrow">→</span>
+        </a>
+      </div>
+
+      <div class="toc-section-title" style="margin-top: 25px;">CAD Design & Modeling Projects</div>
+      <div class="toc-list">
+        <!-- CAD Project 1: SkopaNX -->
+        <a href="#cad-1" data-page="cad-1">
+          <span class="project-number">C1</span>
+          <span class="project-info">
+            <strong>SkopaNX (Excavator Bucket Design)</strong>
+            <small>Siemens NX / Parametric 3D Modeling</small>
+          </span>
+          <span class="project-arrow">→</span>
+        </a>
+
+        <!-- CAD Project 2: TraktorNX -->
+        <a href="#cad-2" data-page="cad-2">
+          <span class="project-number">C2</span>
+          <span class="project-info">
+            <strong>Compact Earthmoving Tractor</strong>
+            <small>Siemens NX / DFMA & FMEA Analysis</small>
+          </span>
+          <span class="project-arrow">→</span>
+        </a>
+
+        <!-- CAD Project 3: SolidWorks Vehicle & Gear Ratio -->
+        <a href="#cad-3" data-page="cad-3">
+          <span class="project-number">C3</span>
+          <span class="project-info">
+            <strong>Vehicle Assembly, Springs & Gear Ratios</strong>
+            <small>SolidWorks / Spring Mechanics & Gear Train</small>
+          </span>
+          <span class="project-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- PROGRAMMING PROJECT 1 -->
+    <section id="project-1" class="panel">
+      <div class="report-label">PROGRAMMING PROJECT / 01</div>
+      <h2>Film1</h2>
+      <div class="github-link-box">
+        <strong>GitHub Repository:</strong>
+        <a href="https://github.com/wowercan1337-jpg/Film1" target="_blank" rel="noopener noreferrer">https://github.com/wowercan1337-jpg/Film1 ↗</a>
+      </div>
+      <div class="report-content">
+        <h3>Introduction</h3>
+        <p>A robust backend movie database API tested thoroughly across multiple endpoints and ports (8081 and 8082).</p>
+      </div>
+      <div class="project-navigation">
+        <span></span>
+        <a href="#project-2" data-page="project-2" class="next-proj-btn">Next Project: BMS-Projekt 1 →</a>
+      </div>
+      <a href="#table-content" data-page="table-content" class="back-link">← Back to Projects Index</a>
+    </section>
+
+    <!-- PROGRAMMING PROJECT 2 -->
+    <section id="project-2" class="panel">
+      <div class="report-label">PROGRAMMING PROJECT / 02</div>
+      <h2>BMS-Projekt 1</h2>
+      <div class="github-link-box">
+        <strong>GitHub Repository:</strong>
+        <a href="https://github.com/wowercan1337-jpg/bms-projekt1" target="_blank" rel="noopener noreferrer">https://github.com/wowercan1337-jpg/bms-projekt1 ↗</a>
+      </div>
+      <div class="report-content">
+        <h3>Introduction</h3>
+        <p>Battery Management Services (Part 1): Smart EV charger client interacting via JSON HTTP.</p>
+      </div>
+      <div class="project-navigation">
+        <a href="#project-1" data-page="project-1" class="prev-proj-btn">← Previous</a>
+        <a href="#project-3" data-page="project-3" class="next-proj-btn">Next Project: Exjobbet →</a>
+      </div>
+      <a href="#table-content" data-page="table-content" class="back-link">← Back to Projects Index</a>
+    </section>
+
+    <!-- PROGRAMMING PROJECT 3 -->
+    <section id="project-3" class="panel">
+      <div class="report-label">PROGRAMMING PROJECT / 03</div>
+      <h2>Exjobbet</h2>
+      <div class="github-link-box">
+        <strong>GitHub Repository:</strong>
+        <a href="https://github.com/wowercan1337-jpg/Exjobbet" target="_blank" rel="noopener noreferrer">https://github.com/wowercan1337-jpg/Exjobbet ↗</a>
+      </div>
+      <div class="report-content">
+        <h3>Introduction</h3>
+        <p>Full-stack programming and physical modeling featuring friction force ($F_f = \mu \cdot F_g \cdot \cos(\alpha)$).</p>
+      </div>
+      <div class="project-navigation">
+        <a href="#project-2" data-page="project-2" class="prev-proj-btn">← Previous</a>
+        <a href="#cad-1" data-page="cad-1" class="next-proj-btn">Next: SkopaNX →</a>
+      </div>
+      <a href="#table-content" data-page="table-content" class="back-link">← Back to Projects Index</a>
+    </section>
+
+    <!-- CAD PROJECT 1: SKOPANX -->
+    <section id="cad-1" class="panel">
+      <div class="report-label">CAD DESIGN / 01 (SIEMENS NX)</div>
+      <h2>SkopaNX (Excavator Bucket Design)</h2>
+
+      <div class="cad-image-container">
+        <img src="SkopaNx.png" alt="SkopaNX 3D Model" class="cad-preview-image">
+        <small class="image-caption">Figure 1.1: 3D CAD model of SkopaNX designed in Siemens NX[cite: 15].</small>
+      </div>
+
+      <div class="report-content">
+        <h3>Introduction</h3>
+        <p>A heavy-duty excavator bucket engineered in Siemens NX, optimized for structural integrity and wear resistance using Hardox wear steel.</p>
+
+        <h3>Technical Data</h3>
+        <table class="tech-data-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Material</th>
+              <th>Length (mm)</th>
+              <th>Width (mm)</th>
+              <th>Thickness (mm)</th>
+              <th>Height (mm)</th>
+              <th>Mass (kg)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Wear steel HB (550)</td>
+              <td>50</td>
+              <td>1800</td>
+              <td>10</td>
+              <td>10</td>
+              <td>14.73</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Structural Steel</td>
+              <td>700</td>
+              <td>850</td>
+              <td>1530</td>
+              <td>10</td>
+              <td>235.00</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Design Specifications & Workflow</h3>
+        <p><strong>Software:</strong> Siemens NX</p>
+        <p><strong>Material Properties:</strong> HB 550 wear steel for high abrasive durability, combined with robust structural steel reinforcement plates and integrated lifting hooks.</p>
+      </div>
+
+      <div class="project-navigation">
+        <a href="#project-3" data-page="project-3" class="prev-proj-btn">← Previous</a>
+        <a href="#cad-2" data-page="cad-2" class="next-proj-btn">Next: TraktorNX →</a>
+      </div>
+
+      <a href="#table-content" data-page="table-content" class="back-link">← Back to Projects Index</a>
+    </section>
+
+    <!-- CAD PROJECT 2: TRAKTORNX -->
+    <section id="cad-2" class="panel">
+      <div class="report-label">CAD DESIGN / 02 (SIEMENS NX)</div>
+      <h2>Compact Earthmoving Tractor (TraktorNX)</h2>
+
+      <div class="download-box">
+        <a href="RapportExjobb.pdf" download class="download-btn">
+          📥 Download Full Technical Report (PDF)
+        </a>
+      </div>
+
+      <div class="cad-gallery-grid">
+        <div class="cad-image-container">
+          <img src="Traktor1NX.png" alt="TraktorNX Front View" class="cad-preview-image">
+          <small class="image-caption">Figure 2.1: Front assembly view of the compact tractor[cite: 16].</small>
+        </div>
+        <div class="cad-image-container">
+          <img src="Traktor2NX.png" alt="TraktorNX Bucket & Swing Tower View" class="cad-preview-image">
+          <small class="image-caption">Figure 2.2: Detailed view of bucket and swing tower[cite: 17].</small>
+        </div>
+      </div>
+
+      <div class="report-content">
+        <h3>3.1.2 Concept & Motivation</h3>
+        <p>
+          The motivation behind designing a new tractor within <strong>Heracles AB</strong> stems from the strategic need to expand the company's product line with an innovative earthmoving machine for agriculture and construction sites.
+        </p>
+        <p>
+          Market research identified a gap for compact earthmoving machines inspired by American bulldozers. A central part of the concept is the integration of a <strong>swing tower</strong> similar to excavators, providing flexibility and precision without compromising quality.
+        </p>
+
+        <h3>3.6 Design for Manufacture and Assembly (DFMA) & FMEA</h3>
+        <p>
+          Assembly and manufacturing strategies are derived from <strong>FMEA (Failure Mode and Effects Analysis)</strong>. Geometric changes in the CAD model are triggered based on FMEA impact regarding human errors, supported by DFA (Design for Assembly) and DFM (Design for Manufacturing).
+        </p>
+      </div>
+
+      <div class="project-navigation">
+        <a href="#cad-1" data-page="cad-1" class="prev-proj-btn">← Previous: SkopaNX</a>
+        <a href="#cad-3" data-page="cad-3" class="next-proj-btn">Next: SolidWorks Vehicle →</a>
+      </div>
+
+      <a href="#table-content" data-page="table-content" class="back-link">← Back to Projects Index</a>
+    </section>
+
+    <!-- CAD PROJECT 3: SOLIDWORKS VEHICLE, SPRINGS & GEARS -->
+    <section id="cad-3" class="panel">
+      <div class="report-label">CAD DESIGN / 03 (SOLIDWORKS)</div>
+      <h2>Vehicle Assembly, Spring Mechanics & Gear Ratios</h2>
+
+      <div class="download-box">
+        <a href="RapportExjobb.pdf" download class="download-btn">
+          📥 Download Full Technical Report (PDF)
+        </a>
+      </div>
+
+      <div class="cad-gallery-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="cad-image-container">
+          <img src="FordonSolid1.png" alt="Vehicle Assembly Overview" class="cad-preview-image">
+          <small class="image-caption">Figure 3.1: Vehicle assembly (FordonSolid1)[cite: 18].</small>
+        </div>
+        <div class="cad-image-container">
+          <img src="FordonSolid2.png" alt="Spring Component" class="cad-preview-image">
+          <small class="image-caption">Figure 3.2: Spring setup (FordonSolid2)[cite: 19].</small>
+        </div>
+        <div class="cad-image-container">
+          <img src="FordonSolid3.png" alt="Gear Train System" class="cad-preview-image">
+          <small class="image-caption">Figure 3.3: Gear train layout (FordonSolid3).</small>
+        </div>
+      </div>
+
+      <div class="report-content">
+        <h3>1. Overview & Mass Specifications</h3>
+        <p>
+          Complete SolidWorks vehicle design featuring a total mass of <strong>8.74163215 kg</strong>[cite: 18], integrating precise structural components, spring suspension mechanics, and symmetrical gear transmission systems.
+        </p>
+
+        <h3>2. Spring Mechanics & Calculations</h3>
+        <p>
+          Spring material conforms to standard <strong>SS 1770</strong> with an ultimate tensile strength ($R_m$) of <strong>1250 MPa</strong>.
+        </p>
+
+        <h4>2.4.1 Spring Deflection Calculation ($\Delta x = x_1 - x_0$)</h4>
+        <p>$F_g = 265\text{ kg} \cdot 9.82\text{ m/s}^2 = 2602.3\text{ N}$</p>
+        <p>$k = 20000\text{ N/m}$</p>
+        <p>$(x_1 - x_0) = \frac{F_g}{k} = \frac{2602.3\text{ N}}{20000\text{ N/m}} = 0.130115\text{ m} = 13.0115\text{ cm} \approx 13\text{ cm}$</p>
+
+        <h4>2.4.2 Energy Storage Calculation</h4>
+        <p>$E = \frac{1}{2} \cdot k \cdot (x_1 - x_0)^2 = \frac{20000\text{ N/m} \cdot (0.130115\text{ m})^2}{2} = 169.2999132\text{ J} \approx 170\text{ J}$</p>
+
+        <h3>3. Gear Train System Analysis (Figure ABCD)</h3>
+        <p>
+          The power transmission system consists of four primary gears (A, B, C, and D) structured symmetrically on both the left and right sides (excluding the right-side braking mechanism).
+        </p>
+        <ul>
+          <li><strong>Gear A:</strong> 15 teeth</li>
+          <li><strong>Gear B:</strong> 30 teeth</li>
+          <li><strong>Gear C:</strong> 20 teeth</li>
+          <li><strong>Gear D:</strong> 30 teeth</li>
+        </ul>
+
+        <h4>Gear Ratio Breakdown (Left & Right Sides):</h4>
+        <p>$\frac{A}{B} = \frac{15}{30} = 0.5$</p>
+        <p>$\frac{B}{C} = \frac{30}{20} = 1.5$</p>
+        <p>$\frac{C}{D} = \frac{20}{30} = \frac{2}{3}$</p>
+        
+        <p><strong>Total Ratio ($R_{\text{total}}$):</strong></p>
+        <p>$R_{\text{total}} = \left(\frac{A}{B}\right) \cdot \left(\frac{B}{C}\right) \cdot \left(\frac{C}{D}\right) = 0.5 \cdot 1.5 \cdot \frac{2}{3} = 0.5$</p>
+        
+        <p>
+          <strong>Conclusion:</strong> Both sides yield an identical total transmission ratio of <strong>0.5</strong>, ensuring perfectly balanced mechanical performance.
+        </p>
+      </div>
+
+      <div class="project-navigation">
+        <a href="#cad-2" data-page="cad-2" class="prev-proj-btn">← Previous: TraktorNX</a>
+        <span></span>
+      </div>
+
+      <a href="#table-content" data-page="table-content" class="back-link">← Back to Projects Index</a>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about-me" class="panel">
+      <h2>About Me</h2>
+      <p>Hello! My name is Eric Forsberg.</p>
+      
+      <h3>Cover Letter & Professional Summary</h3>
+      <p>
+        I am a dedicated software developer and mechanical design engineer with a unique dual background bridging software programming and advanced CAD engineering. Passionate about building robust backend applications, automated data flows, and precision mechanical systems, I thrive on complex problem-solving and modern product development.
+      </p>
+
+      <h3>Education</h3>
+      <ul>
+        <li>
+          <strong>Folkuniversitetet</strong><br>
+          <em>Higher Vocational Education Diploma (HVED)</em> – Software Developer for Mobility Services<br>
+          <small>August 2024 – June 2026</small>
+        </li>
+        <li>
+          <strong>Higher Vocational Education Diploma (HVED)</strong> – Mechanical CAD Designer<br>
+          <small>August 2023 – June 2025</small>
+        </li>
+        <li>
+          <strong>Wendela Hebbegymnasiet</strong><br>
+          <em>High School Diploma</em> – Technology Program (Information & Media Technology)<br>
+          <small>August 2020 – June 2021</small>
+        </li>
+      </ul>
+
+      <h3>Professional Experience & Internships (LIA)</h3>
+      <ul>
+        <li>
+          <strong>The Unigrid Foundation</strong> · Intern / Java Oracle Developer<br>
+          <small>January 2026 – June 2026 (Remote, Gothenburg, Sweden)</small><br>
+          Focused on Java, XML, and database systems during LIA 1 and LIA 2.
+        </li>
+        <li>
+          <strong>Maskin & Truckex Ab</strong> · Intern / Mechanical Design & CAD Engineer<br>
+          <small>February 2025 – May 2025 (Hybrid, Södertälje, Sweden)</small><br>
+          Thesis work in machine design focusing on concept tractors, presentations, and problem-solving.
+        </li>
+        <li>
+          <strong>Maskin & Truckex Ab</strong> · Intern / CAD Designer<br>
+          <small>April 2024 – May 2024 (Hybrid, Södertälje, Sweden)</small><br>
+          Performed LIA 1 focused on bucket design (NX Unigraphics), CRM, and 3D parametric modeling.
+        </li>
+      </ul>
+
+      <div class="about-developer-card" style="margin-top: 15px;">
+        <h3>Developer & Engineer Profile</h3>
+        <p><strong>Status:</strong> Available for projects & engineering roles</p>
+        <p><strong>Tech & CAD Stack:</strong> Java, Python, XML, HTML, CSS, JavaScript, Git, Siemens NX, SolidWorks</p>
+        <div class="about-links">
+          <a href="https://github.com/wowercan1337-jpg" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="panel">
+      <h2>Contact Me</h2>
+
+      <!-- Personal Details & External LinkedIn Link -->
+      <div class="contact-details-box">
+        <h3>Direct Contact Details</h3>
+        <p><strong>Email:</strong> <a href="mailto:your@email.com">your@email.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/eric-f-b37066180/" target="_blank" rel="noopener noreferrer">Eric Forsberg on LinkedIn ↗</a></p>
+        <p><strong>Location:</strong> Gothenburg / Södertälje, Sweden</p>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent.');">
+        <h3>Send a Message</h3>
+        
+        <!-- Name -->
+        <div class="form-group">
+          <label for="contact-name">Name *</label>
+          <input type="text" id="contact-name" name="name" placeholder="Your Full Name" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="contact-email">Email Address *</label>
+          <input type="email" id="contact-email" name="email" placeholder="name@example.com" required>
+        </div>
+
+        <!-- Website -->
+        <div class="form-group">
+          <label for="contact-website">Website</label>
+          <input type="url" id="contact-website" name="website" placeholder="https://yourwebsite.com">
+        </div>
+
+        <!-- Phone Number -->
+        <div class="form-group">
+          <label for="contact-phone">Phone Number</label>
+          <input type="tel" id="contact-phone" name="phone" placeholder="+46 70 123 45 67">
+        </div>
+
+        <!-- Dropdown -->
+        <div class="form-group">
+          <label for="contact-subject">Inquiry Type *</label>
+          <select id="contact-subject" name="subject" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="software">Software Development Project</option>
+            <option value="cad">CAD Design & Mechanical Engineering</option>
+            <option value="recruitment">Recruitment / Job Opportunity</option>
+            <option value="other">Other Inquiry</option>
+          </select>
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group">
+          <label for="contact-message">Message *</label>
+          <textarea id="contact-message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="contact-consent" name="consent" required>
+          <label for="contact-consent">I agree to be contacted regarding this inquiry.</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2026 My Portfolio. All rights reserved.
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    function showPage(pageId) {
+      const selectedPage = document.getElementById(pageId);
+      if (!selectedPage) return;
+
+      document.querySelectorAll(".panel").forEach(panel => {
+        panel.classList.remove("active-page");
+      });
+
+      selectedPage.classList.add("active-page");
+
+      const mainPages = ["home", "table-content", "about-me", "contact"];
+
+      document.querySelectorAll(".menu a[data-page]").forEach(link => {
+        link.classList.remove("active");
+        if (
+          link.dataset.page === pageId ||
+          (!mainPages.includes(pageId) && link.dataset.page === "table-content")
+        ) {
+          link.classList.add("active");
+        }
+      });
+
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    document.querySelectorAll("[data-page]").forEach(link => {
+      link.addEventListener("click", event => {
+        event.preventDefault();
+        const pageId = link.dataset.page;
+        history.pushState(null, "", "#" + pageId);
+        showPage(pageId);
+
+        document.getElementById("nav-menu").classList.remove("open");
+        document.getElementById("hamburger-btn").classList.remove("active");
+      });
+    });
+
+    const hamburgerBtn = document.getElementById("hamburger-btn");
+    const navMenu = document.getElementById("nav-menu");
+
+    hamburgerBtn.addEventListener("click", () => {
+      hamburgerBtn.classList.toggle("active");
+      navMenu.classList.toggle("open");
+    });
+
+    window.addEventListener("popstate", () => {
+      const pageId = location.hash.substring(1) || "home";
+      showPage(pageId);
+    });
+
+    showPage(location.hash.substring(1) || "home");
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

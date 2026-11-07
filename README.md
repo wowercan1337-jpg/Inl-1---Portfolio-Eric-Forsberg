@@ -1,4 +1,11 @@
 # Porfolio project 
+
+## Problem   
+Acording to firefox tools contrast during home button from menu.    
+(4.48 to 5.19. AA) 
+
+
+
 ## Appendix 
 <img width="1039" height="717" alt="Wireframes " src="https://github.com/user-attachments/assets/f8036778-2385-4f59-8f57-f572539426e7" />
 Appednix 1 wireframe 
